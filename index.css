@@ -138,11 +138,42 @@ body {
   transform: translateX(calc(70px * 4));
 }
 
-/* Name Logo CSS */
-/* #logo {
-  
-  /* transform: translate(-50%, -50%); */
+/* Name Logo CSS 
+ #logo {
+   transform: translate(-50%, -50%); 
 } */
+
+.hellodiv{
+  color:white;
+  font-family: roboto, sans-serif;
+  font-size: 5em;
+
+}
+
+.namediv{
+  color:white;
+  font-family: roboto, sans-serif;
+  font-size: 3em;
+  padding-left: 1em;
+  display: flex;
+  
+}
+.professiondiv{
+  color:white;
+  font-size: 2em;
+  padding-left: 1em;
+}
+.word-A{
+  font-size: larger;
+  background-color: red;
+}
+
+.svgdiv{
+  margin-left: 0.2em;
+  
+  display: flex;
+  height:min-content;
+}
 
 #logo path {
   stroke-dasharray: 1000;
@@ -155,17 +186,7 @@ body {
   }
 }
 
-@keyframes fill-animation {
-  from {
-    fill: transparent;
-  }
-  to {
-    fill: rgb(255, 161, 161);
-  }
-}
 
-
-/*  */
 
 
 
@@ -180,7 +201,4 @@ body {
 
 
 
-/* #5DADE2 (base color)
-#85C1E9 (tint)
-#3498DB (shade)
-#F5F5DC (tone) */
+

@@ -11,15 +11,6 @@ new Blobity(options);
 
 
 
-// #ffffff (white)
-// #d9d9d9 (light gray)
-// #fde3a7 (pale yellow)
-// #b3e5fc (pale blue)
-// #f48fb1 (pale pink)
-
-
-// code for name
-
 const logo = document.querySelectorAll('#logo path');
 
 for (let i = 0; i < logo.length; i++) {

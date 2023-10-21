@@ -143,41 +143,64 @@ body {
    transform: translate(-50%, -50%); 
 } */
 
-.hellodiv{
-  color:white;
+.hellodiv {
+  color: white;
   font-family: roboto, sans-serif;
   font-size: 5em;
-
 }
 
-.namediv{
-  color:white;
+.namediv {
+  color: white;
   font-family: roboto, sans-serif;
   font-size: 3em;
   padding-left: 1em;
   display: flex;
-  
 }
-.professiondiv{
-  color:white;
+.professiondiv {
+  color: white;
   font-size: 2em;
   padding-left: 1em;
 }
-.word-A{
-  font-size: larger;
-  background-color: red;
+.profession-title {
+  font-family: "Rock Salt", sans-serif;
+  display: flex;
 }
 
-.svgdiv{
-  margin-left: 0.2em;
-  
+.profession-inner-div div {
+  font-family: "Rock Salt", sans-serif;
+  font-size: 2em;
+  line-height: 1.7em;
   display: flex;
-  height:min-content;
+}
+
+.secondary-description {
+  color: white;
+}
+
+.profession-title {
+  font-family: "Rock Salt", sans-serif;
+  display: flex;
+  
+}
+
+.word-A {
+  margin: auto 0;
+  padding: 0.5em;
+}
+
+.svgdiv {
+  margin-left: 0.2em;
+
+  display: flex;
+  height: min-content;
 }
 
 #logo path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
+}
+#professional-inner-div {
+  display: flex;
 }
 
 @keyframes line-animation {
@@ -186,19 +209,39 @@ body {
   }
 }
 
+.mainwrapper {
+  margin: 3em 2em 1em 10em;
+}
+
+.secondary-description {
+  color: white;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  margin: 1em 0em 0em 0.5em;
+  display: flex;
+}
+
+/* .secondary-description > div {
+  border: 5px solid red;
+} */
 
 
-
-
-.mainwrapper{
-  border:1px solid black;
-  
-  padding:1em;
-  margin:1em 2em 1em 2em;
-  /* /* border box */
-  box-sizing: border-box;
+.chopper-wrapper{
+  position: relative;
 }
 
 
+.chopper{
+  animation: MoveUpDown 4s linear infinite;
+  position: absolute;
+}
 
-
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: -7px;
+  }
+  50% {
+    bottom: 5px;
+  }
+}

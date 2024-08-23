@@ -227,6 +227,23 @@ body {
 } */
 
 
+.chopperContent{
+  /* background-color: white; */
+  /* color: black; */
+  display: inline-block;
+  animation: animateContent 4s ease-in-out infinite;
+
+}
+
+.chopperContent span{
+  position: relative;
+  display: inline-block;
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  animation: animateContent 2s ease-in-out infinite;
+}
+
 .chopper-wrapper{
   position: relative;
 }
@@ -235,6 +252,7 @@ body {
 .chopper{
   animation: MoveUpDown 4s linear infinite;
   position: absolute;
+  transform: scale(1.5);
 }
 
 @keyframes MoveUpDown {
@@ -242,6 +260,173 @@ body {
     bottom: -7px;
   }
   50% {
-    bottom: 5px;
+    bottom: 1px;
   }
+}
+
+@keyframes animateContent {
+  0%, 100% {
+    bottom: -1px;
+  }
+  50% {
+    bottom: 2px;
+  }
+
+  
+}
+
+
+
+
+/* Background css */
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+}
+
+.context h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.area {
+    background: #000000;  
+    background: linear-gradient(to right, #000000, #1a1a1a);  
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    animation: animate 25s linear infinite;
+    right: -150px;
+}
+
+.circles li:nth-child(1) {
+    top: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.circles li:nth-child(2) {
+    top: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.circles li:nth-child(3) {
+    top: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.circles li:nth-child(4) {
+    top: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.circles li:nth-child(5) {
+    top: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.circles li:nth-child(6) {
+    top: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.circles li:nth-child(7) {
+    top: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.circles li:nth-child(8) {
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.circles li:nth-child(9) {
+    top: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.circles li:nth-child(10) {
+    top: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateX(-1000px) rotate(720deg);
+        opacity: 1;
+        border-radius: 50%;
+    }
 }

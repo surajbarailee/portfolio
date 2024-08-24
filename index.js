@@ -10,6 +10,40 @@ const options = {
 new Blobity(options);
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const circles = document.querySelectorAll(".circles li");
+    const imageSources = [
+        "assets/images/docker.svg",
+        "assets/images/firebase.svg",
+        "assets/images/js.png",
+        "assets/images/postgres.png",
+        "assets/images/python.png",
+        "assets/images/typescript.png",
+        "assets/images/vue.svg",
+        "assets/images/aws.png",
+        "assets/images/django.svg"
+    ];
+
+    circles.forEach(circle => {
+        const imgElement = circle.querySelector("img");
+
+        // Function to change the image randomly
+        function changeImage() {
+            console.log("Changing Image")
+            const randomIndex = Math.floor(Math.random() * imageSources.length);
+            imgElement.src = imageSources[randomIndex];
+        }
+
+        // Add event listener for animation end
+        // circle.addEventListener("animationend", changeImage);
+        circle.addEventListener("animationiteration", changeImage);
+
+        // Optionally, trigger the changeImage function at the start
+        changeImage();
+    });
+});
+
+
 
 const logo = document.querySelectorAll('#logo path');
 

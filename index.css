@@ -38,7 +38,6 @@ body {
   position: relative;
   width: 70px;
   height: 60px;
-  z-index: 2;
 }
 .navigation ul li a {
   position: relative;
@@ -94,7 +93,6 @@ body {
   height: 70px;
   background: #fff;
   border-radius: 50%;
-  z-index: 1;
   transition: 0.7s;
 }
 
@@ -319,6 +317,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: -1;
     /* overflow: hidden; */
 }
 
@@ -431,3 +430,41 @@ body {
     }
 }
 
+
+
+#social-test {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+  padding-left:10rem;
+  padding-top: 1rem;
+}
+
+#social-test h2 {
+  color: #fff;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight: 100;
+}
+
+#social-test social {
+    padding-left: 0px;
+}
+
+#social-test li {
+    color: rgba(167, 146, 129, 0.6);
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    /* margin: 0.5rem; */
+    border: 1px solid rgba(167, 146, 129, 0.4);
+    border-radius:50%;
+    transition: ease .3s;
+}
+
+#social-test li:hover{
+    color: white;
+    border:1px solid white;
+}

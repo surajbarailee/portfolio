@@ -1,16 +1,29 @@
-const options = { 
+
+
+
+const initialBlobityOptions = {
+    licenseKey: "opensource",
+    focusableElementsOffsetX: 5,
+    focusableElementsOffsetY: 5,
+    focusableElements: '.social-icons',
+    font: "'Montserrat','Source Sans Pro',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif",
+    fontSize: 16,
+    fontWeight: 500,
+    opacity: 1,
+    fontColor: "#0e1016",
     color: '#ffffff',
-    size: 25,
-    invert: false,
+    size: 20,
+    invert: true,
     dotColor: '#ffffff',
     dotSize: 10,
     magnetic: false,
     radius: 20,
-};
-new Blobity(options);
+}  
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
+    new Blobity(initialBlobityOptions);
     const circles = document.querySelectorAll(".circles li");
     const imageSources = [
         "assets/images/docker.svg",

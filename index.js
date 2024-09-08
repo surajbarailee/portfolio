@@ -9,15 +9,15 @@ const initialBlobityOptions = {
     font: "'Montserrat','Source Sans Pro',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif",
     fontSize: 16,
     fontWeight: 500,
-    opacity: 1,
-    fontColor: "#0e1016",
-    color: '#ffffff',
+    opacity: 0.8,
+    color: 'rgb(0, 180, 180)',
     size: 20,
     invert: true,
-    dotColor: '#ffffff',
-    dotSize: 10,
-    magnetic: false,
+    dotColor: 'rgb(255, 255, 0)',
+    dotSize: 15,
+    magnetic: true,
     radius: 20,
+    kineticMorphing:true
 }  
 
 

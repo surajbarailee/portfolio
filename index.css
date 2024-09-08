@@ -1,11 +1,20 @@
-* {
+
+
+body{
+  overflow: hidden;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:black;
 }
-body {
-  background-color: #212529;
+
+.hello-div{
+  font-size: 10rem;
+  font-weight: 600;
+  /* border:1px solid red; */
+  width:100%;
 }
+
 .box-container {
   position: absolute;
 
@@ -148,31 +157,30 @@ body {
 }
 
 .namediv {
-  color: white;
   font-family: roboto, sans-serif;
-  font-size: 3em;
+  font-size: 5em;
   padding-left: 1em;
   display: flex;
 }
-.professiondiv {
+.professionDiv {
   color: white;
-  font-size: 2em;
-  padding-left: 1em;
+  font-size: 1.5em;
 }
 .profession-title {
   font-family: "Rock Salt", sans-serif;
   display: flex;
 }
 
-.profession-inner-div div {
+.profession-inner-div {
   font-family: "Rock Salt", sans-serif;
-  font-size: 2em;
+  font-size: 1em;
   line-height: 1.7em;
-  display: flex;
+  text-align: center;
+  color:black
 }
 
-.secondary-description {
-  color: white;
+.secondary-description div {
+  color: black;
 }
 
 .profession-title {
@@ -186,12 +194,17 @@ body {
   padding: 0.5em;
 }
 
-.svgdiv {
-  margin-left: 0.2em;
-
+.svgDiv {
   display: flex;
-  height: min-content;
+  background-color: black;
+  justify-content: center;
+
 }
+
+.svgDivWrapper{
+  /* border: 5px solid white; */
+}
+
 
 #logo path {
   stroke-dasharray: 1000;
@@ -207,10 +220,6 @@ body {
   }
 }
 
-.mainwrapper {
-  margin: 3em 2em 1em 10em;
-}
-
 .secondary-description {
   color: white;
   font-size: 1em;
@@ -220,14 +229,8 @@ body {
   display: flex;
 }
 
-/* .secondary-description > div {
-  border: 5px solid red;
-} */
-
 
 .chopperContent{
-  /* background-color: white; */
-  /* color: black; */
   display: inline-block;
   animation: animateContent 4s ease-in-out infinite;
 
@@ -318,7 +321,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .circles li {
@@ -432,26 +435,23 @@ body {
 
 
 
-#social-test {
-  display: table-cell;
-  vertical-align: middle;
+#social-icons-wrapper {
   text-align: center;
-  font-size: 30px;
-  padding-left:10rem;
-  padding-top: 1rem;
+  font-size: 2rem;
+  margin: 1rem;
 }
 
-#social-test h2 {
+#social-icons-wrapper h2 {
   color: #fff;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-weight: 100;
 }
 
-#social-test social {
+#social-icons-wrapper social {
     padding-left: 0px;
 }
 
-#social-test li {
+#social-icons-wrapper li {
     color: rgba(167, 146, 129, 0.6);
     list-style-type: none;
     display: inline-block;
@@ -464,7 +464,7 @@ body {
     transition: ease .3s;
 }
 
-#social-test li:hover{
+#social-icons-wrapper li:hover{
     color: white;
     border:1px solid white;
 }

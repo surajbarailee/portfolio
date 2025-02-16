@@ -119,7 +119,6 @@
         this.classList.add("active");
       }
       list.forEach((item) => item.addEventListener("click", activeLink));
-      //  change background color when click on list
       const indicator = document.querySelector("body");
       function indicatorColor() {
       indicator.style.backgroundColor = this.style.getPropertyValue("--clr");

@@ -439,6 +439,17 @@ body {
   text-align: center;
   font-size: 2rem;
   margin: 1rem;
+  color:black;
+
+
+
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
 }
 
 #social-icons-wrapper h2 {
@@ -452,19 +463,19 @@ body {
 }
 
 #social-icons-wrapper li {
-    color: rgba(167, 146, 129, 0.6);
+    color: rgba(0, 0, 0, 0.6);
     list-style-type: none;
     display: inline-block;
     width: 50px;
     height: 50px;
     line-height: 50px;
     /* margin: 0.5rem; */
-    border: 1px solid rgba(167, 146, 129, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius:50%;
     transition: ease .3s;
 }
 
 #social-icons-wrapper li:hover{
-    color: white;
-    border:1px solid white;
+    color:  rgb(255, 251, 0);
+    border-color: rgb(0, 47, 255);
 }

@@ -181,6 +181,7 @@ body{
 
 .secondary-description div {
   color: black;
+  font-size: 2em;
 }
 
 .profession-title {
@@ -477,5 +478,4 @@ body {
 
 #social-icons-wrapper li:hover{
     color:  rgb(255, 251, 0);
-    border-color: rgb(0, 47, 255);
 }
